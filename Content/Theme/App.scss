@@ -1,0 +1,46 @@
+﻿@import "Variable";
+@import "Orientation/LandScape";
+
+@media only screen and (orientation : portrait) {
+    @import "Orientation/portrait";
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    @import "Devices/SmartPhone";
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+    @import "Devices/SmartPhone_Landscape.scss";
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+    @import "Devices/SmartPhone_Portrait.scss";
+}
+
+/* Tablet (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    @import "Devices/Tablet";
+}
+
+/* Tablet (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    @import "Devices/Tablet_Landscape";
+}
+
+/* Tablet (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    @import "Devices/Tablet_Portrait";
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+    @import "Devices/Desktop_HD";
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+    @import "Devices/Desktop_HDR";
+}
